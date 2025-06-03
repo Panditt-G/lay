@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="c.css"> -->
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgb(133, 38, 197);
+  height: 60px;
+  width: 100vw;
+  position: sticky;
+  top: 0px;
+}
+.content {
+  background-color: rgb(107, 50, 240);
+  height: 80vh;
+  width: 90vw;
+  margin: 2vh 4vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.one {
+  background-color: rgb(37, 255, 255);
+  height: 45vh;
+  aspect-ratio: 1/1;
+  /* box-sizing: border-box; */
+}
+.two {
+  background-color: rgb(220, 255, 18);
+  height: 45vh;
+
+  aspect-ratio: 1/1;
+}
+.des {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 150px;
+  width: 80vw;
+  border: 2px solid;
+  border-radius: 40px;
+  
+  margin: 10px auto;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  
+}
+.logo{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50px;
+    background-image: url(logo.enc);
+    background-size: cover;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.foot{
+    height: 75vh;
+    background-color: rgb(8, 8, 22);
+}
+
+@media (max-width: 1525px) {
+  .one, .two {
+    width: 30%;
+    height: auto;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    height: 50vh;
+  }
+
+  .des {
+    font-size: 1.5em;
+    width: 80vw;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    </div>
+    <div class="content">
+    <div class="one"></div>
+    <div class="two"></div>
+    </div>
+    <div class="des">hey iam sigma devloper and you know my ego</div>
+    <div class="logo"></div>
+    <footer class="foot"></footer>
+</body>
+</html>
